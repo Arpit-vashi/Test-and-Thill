@@ -1,0 +1,135 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+header nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    background-color: white;
+}
+
+header nav .Logo-top {
+    margin-left: 2rem;
+}
+
+header nav .nav-menu {
+    display: flex;
+    align-items: center;
+    font-size: large;
+    font-weight: 500;
+}
+
+nav .nav-menu a {
+    color: black;
+    margin-left: 30px;
+    position: relative;
+}
+
+nav .nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #dd0707;
+    transition: 0.4s;
+}
+
+nav .nav-menu a:hover::after {
+    width: 100%;
+}
+
+nav .socials {
+    margin-right: 20px;
+}
+
+nav .socials a i {
+    gap: 2rem;
+    color: black;
+    font-size: 22px;
+    margin-left: 10px;
+    transition: 0.3s;
+}
+
+nav .socials a i:hover {
+    transform: scale(1.3);
+    color: #dd0707;
+}
+
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../Assets/Bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.hero .text {
+    padding-top: 15rem;
+    padding-left: 6rem;
+}
+
+.hero .text h4 {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hero .text h1 {
+    color: #fff;
+    font-size: 65px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.hero .text h1 span {
+    color: #dd0707;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.hero .text p {
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.hero .text .btn {
+    padding: 10px 30px;
+    background-color: #dd0707;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 30px;
+    border: 2px solid #dd0707;
+    transition: 0.3s;
+}
+
+.hero .text .btn:hover {
+    background-color: transparent;
+}
+
+.footer-class {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
